@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources[0]:
+            credential:
+              client-secret: "<<password returned from the creation of the service account>>"
+              client-id: "<<appId returned from the creation of the service account>>"
+            profile:
+              tenant-id: "<<tenant returned from the creation of the service account>>"
+            endpoint: "<<your key vault URI>>"
+
+webservice:
+  pokemon:
+    url: https://pokeapi.co/api/v2/pokemon/
+    parameter: ""
