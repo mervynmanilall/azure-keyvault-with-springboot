@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.RestController
 class DemoController @Autowired constructor(
     val demoRepo: DemoRepo
 ) {
-//    az ad sp create-for-rbac --name key-vault-user --role Contributor --scopes /subscriptions/069c55db-dd0e-4608-aab4-a92fc88fe695
     @GetMapping()
-    fun getCarDetail(): String{
-//        return "hello world"
-        return demoRepo.getCarInfo()
+    fun getPokemonDetail(): String{
+        return demoRepo.getPokemonInfo()
     }
 }

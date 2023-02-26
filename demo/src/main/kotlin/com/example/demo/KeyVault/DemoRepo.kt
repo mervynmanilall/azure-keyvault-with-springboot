@@ -14,7 +14,7 @@ class DemoRepo @Autowired constructor(
     @Value("\${pokemon-name}")
     private val pokemonName: String = ""
 
-    fun getCarInfo(): String{
+    fun getPokemonInfo(): String{
         val completeUrl = webserviceConfiguration.url+pokemonName
         val (request, response, result) = "$completeUrl"
             .httpGet().response()

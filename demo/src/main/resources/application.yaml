@@ -1,3 +1,17 @@
+#spring:
+#  cloud:
+#    azure:
+#      keyvault:
+#        secret:
+#          property-source-enabled: true
+#          property-sources[0]:
+#            credential:
+#              client-secret: "<<password returned from the creation of the service account>>"
+#              client-id: "<<appId returned from the creation of the service account>>"
+#            profile:
+#              tenant-id: "<<tenant returned from the creation of the service account>>"
+#            endpoint: "<<your key vault URI>>"
+
 spring:
   cloud:
     azure:
@@ -6,11 +20,11 @@ spring:
           property-source-enabled: true
           property-sources[0]:
             credential:
-              client-secret: "<<password returned from the creation of the service account>>"
-              client-id: "<<appId returned from the creation of the service account>>"
+              client-secret: "lfc8Q~vB_~S9_TqMvd4WZXKjQuL2prDucvFE6aLW"
+              client-id: "72977bc9-7881-40d3-86c3-44463338b03b"
             profile:
-              tenant-id: "<<tenant returned from the creation of the service account>>"
-            endpoint: "<<your key vault URI>>"
+              tenant-id: "d934e173-4844-4d03-b08c-27bd3d4600bb"
+            endpoint: "https://ui-devcon-keyvault-test.vault.azure.net/"
 
 webservice:
   pokemon:
